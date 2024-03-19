@@ -1,39 +1,36 @@
+## **Bắt Đầu**
 
-1. Giải nén
+### **Bước 1: Giải Nén Tập Tin**
 
-2. Kết nối cơ sở dữ liệu
-- Mở thư mục database Copy 2 file vào thư mục data của SQL SERVER
-PATH: C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA
-- Mở sql server attach db 
-- Xong
+### **Bước 2: Kết Nối Cơ Sở Dữ Liệu**
+- Mở thư mục database và sao chép hai tập tin vào thư mục data của SQL SERVER.
+   - Đường dẫn: `C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA`
+- Mở SQL Server và đính kèm cơ sở dữ liệu.
+- Khi hoàn thành, tiến hành bước tiếp theo.
 
-3. Mở project với Visual Studio
-file ictshop.sln
-- Vào file Web.config
+### **Bước 3: Mở Dự Án với Visual Studio**
+- Mở tệp `ictshop.sln` trong Visual Studio.
+- Truy cập vào tệp `Web.config`.
 
-4. Config lại kết nối từ Visual Studio đến SQL Server
-- Tại thẻ <connectionStrings> </connectionStrings>
-thay đổi tên server , tài khoản , mật khẩu kết nối đến sql server
-data source là server name
+### **Bước 4: Cấu Hình Kết Nối Cơ Sở Dữ Liệu**
+- Trong thẻ `<connectionStrings>`, chỉnh sửa tên máy chủ, tên người dùng và mật khẩu để kết nối với SQL Server.
+   - Cập nhật `data source` với tên máy chủ.
+- Lưu các thay đổi, xây dựng ứng dụng và chạy nó.
 
-Lưu lại. build lại ứng dụng . Và run
+### **Đăng Nhập:**
+- Đối với tài khoản khách hàng:
+   - Email: Khach@gmail.com
+   - Mật khẩu: 12345678
+- Đối với tài khoản quản trị:
+   - Email: Admin@gmail.com
+   - Mật khẩu: 12345678
 
-Đăng nhập :
-- Tài khoản khách hàng: 
-tk : Khach@gmail.com 
-mk 12345678
-- Tài khoản admin trang quản trị :
-tk : Admin@gmail.com
-mk : 12345678
+### **Vai Trò Người Dùng**
+- Ứng dụng có hai vai trò: quản trị viên và khách hàng.
 
-Phân quyền quản trị và khách hàng
-
-Bấm mua hàng : giỏ hàng sẽ cập nhật sản phẩm đã chọn.
-Có thể chỉnh sửa giỏ hàng >
-Đặt hàng
-
-Kích vào hình ảnh để xem chi tiết sản phẩm
-
-Đăng nhập tài khoản admin để thêm sửa xóa sản phẩm và các danh mục khác.
-
-Project làm đang còn trên mức độ tìm hiểu , tham khảo cho sinh viên. Chưa hoàn thiện .
+### **Tính Năng**
+- Thêm sản phẩm vào giỏ hàng: giỏ hàng sẽ được cập nhật với các sản phẩm đã chọn.
+- Chỉnh sửa nội dung giỏ hàng.
+- Đặt hàng.
+- Nhấp vào hình ảnh sản phẩm để xem chi tiết.
+- Quản trị viên có thể thêm, chỉnh sửa hoặc xóa sản phẩm và danh mục.
